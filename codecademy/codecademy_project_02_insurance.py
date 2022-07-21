@@ -5,11 +5,19 @@ def calculate_insurance_cost(name, age, sex, bmi, num_of_children, smoker):
   return estimated_cost
   return print("The estimated insurance cost for " + name + " is " + str(estimated_cost) + " dollars.")
 
+def insurance_diff(name_0, name_1):
+  cost_diff = name_0 - name_1
+  print("The difference in insurance cost for " + name_0 + " and " + name_1 + " is " + str(cost_diff) + " dollars.")
+  return cost_diff
+
 # Estimate Maria's insurance cost
-maria_insurance_cost = calculate_insurance_cost(name = "Maria", age = 28, sex = 0, bmi = 26.2, num_of_children = 3, smoker = 0)
+maria_insurance_cost = calculate_insurance_cost("Maria", 28, 0, 26.2, 3, 0)
 
 # Estimate Omar's insurance cost 
-omar_insurance_cost = calculate_insurance_cost(name = "Omar", age = 35, sex = 1, bmi = 22.2, num_of_children = 0, smoker = 1)
+omar_insurance_cost = calculate_insurance_cost("Omar", 35, 1, 22.2, 0, 1)
 
 # Estimation for X
-maria_insurance_cost = calculate_insurance_cost(name = "Maria", age = 28, sex = 0, bmi = 26.2, num_of_children = 3, smoker = 0)
+x_insurance_cost = calculate_insurance_cost("X", 37, 1, 26.2, 0, 0)
+
+# Difference in insurance
+cost_diff = insurance_diff("Maria", "Omar")
