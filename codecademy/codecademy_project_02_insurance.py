@@ -1,5 +1,5 @@
 # Create calculate_insurance_cost() function below: 
-def calculate_insurance_cost():
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker):
   estimated_cost = 1000
   print("The estimated insurance cost for this person is " + str(estimated_cost) + " dollars.")
   return estimated_cost
