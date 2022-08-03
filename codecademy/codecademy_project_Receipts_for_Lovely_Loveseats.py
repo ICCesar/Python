@@ -37,3 +37,9 @@ customer_two_itemization += luxurious_lamp_description
 
 customer_two_tax = customer_two_total * sales_tax
 customer_two_total += customer_two_tax
+
+
+print("Customer Two Items:")
+print(customer_two_itemization)
+print("Customer Two Total:")
+print(customer_two_total)
