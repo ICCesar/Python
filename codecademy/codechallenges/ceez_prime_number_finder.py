@@ -23,7 +23,7 @@ def main():
             print("Please enter a valid integer.")
 
     primes = find_primes(number)
-    print("Prime numbers from 1 to {number}: {primes}")
+    print(f"Prime numbers from 1 to {number}: {primes}")
 
 if __name__ == "__main__":
     main()
